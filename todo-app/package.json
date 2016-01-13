@@ -1,0 +1,24 @@
+{
+  "name": "intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify -o build/bundle.js -t babelify index.js",
+    "watch": "watchify -o build/bundle.js -t babelify index.js --debug --verbose"
+  },
+  "author": "Benedict Hobart <hobart.benedict@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@cycle/core": "5.0.1",
+    "@cycle/dom": "7.1.1",
+    "babel-eslint": "4.1.6",
+    "babel-plugin-transform-react-jsx": "6.2.0",
+    "babel-preset-es2015": "6.1.18",
+    "babelify": "7.2.0",
+    "browserify": "12.0.1",
+    "rx": "4.0.7",
+    "watchify": "3.6.1"
+  }
+}
