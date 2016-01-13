@@ -3,7 +3,7 @@
 the code for the slides is in `slides/index.html`
 ```
 cd slides
-npm install -g grunt-cli
+npm install -g grunt-cli bower
 npm install && bower install
 grunt serve
 ```
