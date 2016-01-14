@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify -o build/bundle.js -t babelify index.js",
-    "watch": "watchify -o build/bundle.js -t babelify index.js --debug --verbose"
+    "build": "mkdir build || true && browserify -o build/bundle.js -t babelify index.js",
+    "watch": "mkdir build || true && watchify -o build/bundle.js -t babelify index.js --debug --verbose"
   },
   "author": "Benedict Hobart <hobart.benedict@gmail.com>",
   "license": "ISC",
